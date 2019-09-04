@@ -13,10 +13,35 @@
     <p id="description">Let us know how we can improve freeCodeCamp</p>
 
     <form id="survey-form" action="index.html" method="post">
-      <input type="text" name="name" value="" id="name">
-      <input type="text" name="email" value="" id="email">
-      <input type="text" name="number" value="" id="number">
-    </form>
+      <label id="name-label"> Name </label>
+      <input type="name" name="name" value="" id="name" placeholder="Please, enter your name" required>
+      <label id="email-label"> Email </label>
+      <input type="email" name="email" value="" id="email" placeholder="Please, enter your email" required>
+      <label id="number-label"> Number </label>
+      <input type="number" name="number" value="" id="number" min="1" max="20" placeholder="Please, enter your number" required>
+      <select id="dropdown">
+        <option value=""></option>
+        <option value=""></option>
+      </select>
+
+
+  <input type="radio" name="gender" value="male"> Male<br>
+  <input type="radio" name="gender" value="female"> Female<br>
+  <input type="radio" name="gender" value="other"> Other<br>  
+
+  <input type="radio" name="age" value="30"> 0 - 30<br>
+  <input type="radio" name="age" value="60"> 31 - 60<br>
+  <input type="radio" name="age" value="100"> 61 - 100<br>  
+
+<input type="checkbox" name="vehicle1" value="Bike"> I have a bike<br>
+<input type="checkbox" name="vehicle2" value="Car"> I have a car<br>
+<input type="checkbox" name="vehicle3" value="Boat" checked> I have a boat<br>
+
+<textarea>
+  Write additional comments
+</textarea>
+<button id="submit"></button>
+</form>
 
 
 
